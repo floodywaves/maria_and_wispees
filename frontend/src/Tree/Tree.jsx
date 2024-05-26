@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import StringMessages from "../message.json";
+import './Tree.css'
 // import Message from "../Message/Message.jsx";
 
 const Tree = () => {
