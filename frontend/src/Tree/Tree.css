@@ -1,8 +1,39 @@
-tree-main {
-    background-color: white;
+.tree-main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#maria-emoji {
+    position: absolute;
+    z-index: 20;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 3;
 }
 
 .message-container {
-    background-color: red;
+    background-color: blue;
     color: black;
+    z-index: 100;
 }

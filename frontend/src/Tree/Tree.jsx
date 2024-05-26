@@ -28,12 +28,26 @@ const Tree = () => {
 
     useEffect(() => {
         setMessageList(StringMessages);
-    }, [])
+    }, []);
 
     return (
         <div className="tree-main">
+            <img 
+                id="background"
+                src="../src/assets/dali.jpeg"
+                alt="Dali"
+                style={{ minWidth: '100%', minHeight: '100%' }}
+            />
+            <img 
+                id="maria-emoji" 
+                src="../src/assets/maria.png" 
+                alt="Maria Emoji" 
+                style={{ minWidth: '300px', minHeight: '300px' }}
+            />
             {messageList.map((item, index) => (
-                <Message key={index} text={item.text} sender={item.sender} />
+                <div key={index} className="message-container">
+                    <Message text={item.text} sender={item.sender} />
+                </div>
             ))}
         </div>
     )

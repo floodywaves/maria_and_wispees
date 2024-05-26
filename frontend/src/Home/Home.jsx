@@ -28,7 +28,7 @@ const Home = () => {
   console.log(showTree);
 
   return (
-    <>
+    <div className="main-container">
       {showTree ? (
         <Tree />
       ) : (
@@ -46,7 +46,7 @@ const Home = () => {
           )}
         </div>
       )}
-    </>
+    </div>
   );
 };
 
