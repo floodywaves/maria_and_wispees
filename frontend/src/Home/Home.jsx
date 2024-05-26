@@ -25,6 +25,8 @@ const Home = () => {
   useEffect(() => {
   }, [showTree]); // Log whenever showTree changes
 
+  console.log(showTree);
+
   return (
     <>
       {showTree ? (

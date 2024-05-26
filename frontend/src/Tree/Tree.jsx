@@ -1,26 +1,42 @@
 import { useEffect, useState } from "react";
-import messageString from "../MessageData.txt";
-import Message from "../Message/Message.jsx";
+import StringMessages from "../message.json";
+// import Message from "../Message/Message.jsx";
 
 const Tree = () => {
-
     const [messageList, setMessageList] = useState([]);
-    console.log(messageList);
+
+    const Message = ({ text, sender }) => {
+        const [open, setOpen] = useState(false);
+
+        const handleClick = () => {
+            setOpen(!open);
+        }
+
+        return (
+            <div className="message-container" onClick={handleClick}>
+                {open ? (
+                    <div>
+                        <p>{text}</p>
+                        <p>{sender}</p>
+                    </div>
+                ) : (
+                    <div>click!</div>
+                )}
+            </div>
+        )
+    }
 
     useEffect(() => {
-        const messages = messageString.split("\n").filter(line => line.trim() !== "");
-        setMessageList(messages);
-        setMessageList()
+        setMessageList(StringMessages);
     }, [])
 
     return (
-        <>
-        {messageList && messageList.map((item) => {
-            <Message message={item} />
-        })}
-        </>
+        <div className="tree-main">
+            {messageList.map((item, index) => (
+                <Message key={index} text={item.text} sender={item.sender} />
+            ))}
+        </div>
     )
-
 }
 
 export default Tree;
