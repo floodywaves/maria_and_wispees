@@ -14,14 +14,16 @@ const Tree = () => {
         }
 
         return (
-            <div className={`message-${index}-background`} onClick={handleClick}>
+            <div className={`message-general message-${index}-background`} onClick={handleClick}>
                 {open ? (
-                    <div>
+                    <div className="message-text">
+                        <div className="inner-text">
                         <p>{text}</p>
                         <p>{sender}</p>
+                        </div>
                     </div>
                 ) : (
-                    <div>click!</div>
+                    <div className="click-text">click!</div>
                 )}
             </div>
         )

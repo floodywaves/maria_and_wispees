@@ -20,6 +20,14 @@
     object-fit: cover; /* Cover the whole area */
 }
 
+.click-text {
+    cursor: pointer;
+}
+
+.message-general:hover {
+    border: 4px solid rgb(106, 180, 255);
+}
+
 #maria-emoji {
     position: absolute;
     top: 50%; /* Center vertically */
@@ -42,17 +50,19 @@
 
 .message-holder-0 {
     background-color: inherit;
-    z-index: 12;
+    z-index: 100;
     position: absolute;
     top: 10%;
     left: 10%;
 }
 
 .message-0-background {
-    width: 170px;
-    height: 120px;
-    border: 2px solid black;
-    background-color: white;
+    z-index: 100;
+    min-width: 170px;
+    max-width: 700px;
+    min-height: 120px;
+    border: 2px solid rgb(107, 122, 124);
+    background-color: rgb(241, 243, 243);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -61,17 +71,61 @@
 
 .message-holder-1 {
     background-color: inherit;
-    z-index: 12;
+    z-index: 100;
     position: absolute;
     top: 20%;
     right: 20%;
 }
 
 .message-1-background {
-    width: 170px;
-    height: 120px;
-    border: 2px solid black;
-    background-color: white;
+    z-index: 100;
+    min-width: 170px;
+    max-width: 700px;
+    min-height: 120px;
+    border: 2px solid rgb(107, 122, 124);
+    background-color: rgb(241, 243, 243);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-holder-2 {
+    background-color: inherit;
+    z-index: 100;
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
+}
+
+.message-2-background {
+    z-index: 100;
+    min-width: 170px;
+    max-width: 700px;
+    min-height: 120px;
+    border: 2px solid rgb(107, 122, 124);
+    background-color: rgb(241, 243, 243);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-holder-3 {
+    background-color: inherit;
+    z-index: 100;
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+}
+
+.message-3-background {
+    z-index: 100;
+    min-width: 170px;
+    max-width: 700px;
+    min-height: 120px;
+    border: 2px solid rgb(107, 122, 124);
+    background-color: rgb(241, 243, 243);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -85,8 +139,18 @@
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Ensure the center is exact */
     z-index: 18;
-    background-color: white;
+    background-color: rgb(241, 243, 243);
     border-radius: 30px; /* Optional: Adds rounded corners */
     min-width: 220px;
     min-height: 220px;
+}
+
+.message-text {
+    padding: 20px;
+}
+
+.inner-text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
 }

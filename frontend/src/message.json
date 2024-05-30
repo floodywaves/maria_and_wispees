@@ -1,10 +1,18 @@
 [
     {
-        "text": "hello",
-        "sender": "sophie"
+        "text": "Hi Maria! Congratulations on your graduation! We were incredibly lucky to have you. I still vividly remember spending two hours fixing a single button. I didn’t know what was going on at the time, but you were there the entire time debugging it with me. You ultimately found out and told me that it was because I copied the wrong firebase configuration lol. You are so smart, genuine, and sweet. It’s a bit sad that we won’t see you in the lab next fall. I wish I could hold you back, but that wouldn’t be fair to you. Looking ahead, I have no doubt that you will continue to achieve great things. Thank you so much for everything. Hope you have a great last week in college! We will miss you so much. I will be looking forward to see you in Seoul this summer xD You ate!",
+        "sender": "Sophie"
     },
     {
-        "text": "hello",
-        "sender": "joyce"
+        "text": "Hey Maria, throughout my wisp journey I have learned so much from you and want to thank you for your dedication and excitement in supporting us throughout these terms. Each milestone that we have achieved wouldn’t have been possible without you. You are such an amazing mentor and I will miss you so much now that you’ll be leaving soon. You made WISP truly an enjoyable experience with your sense of humor and kindness, and efforts to create a welcoming environment such as stealing ice breaker questions. I hope you will have a great time at graduation and vacations around the world!",
+        "sender": "Joyce"
+    },
+    {
+        "text": "Hi Maria! You have been such an amazing mentor throughout WISP, there is no way I couldve done it without you! At every meeting you were always encouraging and supportive while pushing us to do our best. I appreciated how you made sure to keep the WISP workload manageable and were very patient and understanding towards us. I also had so much fun with you as my WISP mentor. Whether we were just joking around during a meeting, answering an icebreaker question that you stole, or getting lous/han fusion as a team, you made WISP feel more like hanging out than a job. Lastly you were always there for us whether we were having computer issues or stressed about course election. Thank you for everything you do we love and miss you!!!!!!!",
+        "sender": "Ellie"
+    },
+    {
+        "text": "Maria, Thank you so much for making my first year so much better than it would have been! Not only did I learn so much about web dev and about DALI from you, but also how to navigate college in general. You are always so patient and kind to us. Maria, you are like my big sister and I am going to miss you a lot!!!! Pleaseee keep in touch!",
+        "sender": " Love, Tasnim"
     }
 ]
