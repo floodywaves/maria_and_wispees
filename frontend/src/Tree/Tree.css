@@ -26,8 +26,7 @@
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Ensure the center is exact */
     z-index: 20;
-    width: 300px; /* Fixed width */
-    height: 300px; /* Fixed height */
+    
 }
 
 .overlay {
@@ -35,8 +34,59 @@
     z-index: 3;
 }
 
-.message-container {
-    background-color: blue;
-    color: black;
-    z-index: 100;
+.message-background {
+    z-index: 12;
+    width: 300px;
+    height: 150x;
+}
+
+.message-holder-0 {
+    background-color: inherit;
+    z-index: 12;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.message-0-background {
+    width: 170px;
+    height: 120px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-holder-1 {
+    background-color: inherit;
+    z-index: 12;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+
+.message-1-background {
+    width: 170px;
+    height: 120px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.maria-background {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Ensure the center is exact */
+    z-index: 18;
+    background-color: white;
+    border-radius: 30px; /* Optional: Adds rounded corners */
+    min-width: 220px;
+    min-height: 220px;
 }
